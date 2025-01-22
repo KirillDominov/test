@@ -4,10 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SkyproApplication {
+public class CalculatorApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SkyproApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(CalculatorApplication.class, args);
+    }
 }
