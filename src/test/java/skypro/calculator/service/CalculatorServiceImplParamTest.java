@@ -10,7 +10,7 @@ import skypro.calculator.service.CalculatorService;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static skypro.calculator.TestConstants.*;
+import static skypro.calculator.constants.TestConstants.*;
 
 public class CalculatorServiceImplParamTest {
 
