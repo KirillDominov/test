@@ -1,6 +1,7 @@
 package skypro.calculator.service;
 
 import org.springframework.stereotype.Service;
+import skypro.calculator.exception.NotEnoughArgumentException;
 import skypro.calculator.exception.ZeroDivideException;
 import skypro.calculator.service.CalculatorService;
 
@@ -15,6 +16,9 @@ public class CalculatorServiceImpl implements CalculatorService {
 
     @Override
     public int getSum(int num1, int num2) {
+        if (num1==null || num2==null){
+            throw new NotEnoughArgumentException("один из двух параметров (или оба) не введены")
+        }
         return num1 + num2;
     }
 
